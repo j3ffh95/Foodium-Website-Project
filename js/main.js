@@ -1,13 +1,13 @@
 const searchButton = document.getElementById("search-btn"),
   searchInput = document.getElementById("search-form"),
-  mealList = document.getElementById("meal"),
+  mealListButton = document.getElementById("meal"),
   mealDetailsContent = document.querySelector(".meal-details-content"),
   recipeCloseBtn = document.getElementById("recipe-close-btn");
 
 // event listeners
 searchInput.addEventListener("submit", getMealList);
 searchButton.addEventListener("click", getMealList);
-mealList.addEventListener("click", getMealRecipe);
+mealListButton.addEventListener("click", getMealRecipe);
 recipeCloseBtn.addEventListener("click", () => {
   mealDetailsContent.parentElement.classList.remove("showRecipe");
 });
@@ -62,18 +62,18 @@ function getMealRecipe(e) {
 
 // create a modal
 function mealRecipeModal(meal) {
-  console.log(meal);
   meal = meal[0];
   let html = `
-        <h2 class = "recipe-title">${meal.strMeal}</h2>
-        <p class = "recipe-category">${meal.strCategory}</p>
+        <h2 class = "recipe-title">Hot to make <i>${meal.strMeal}</i></h2>
+        <p class = "recipe-category">Category: ${meal.strCategory}</p>
+        <div class = "recipe-meal-img">
+            <img src = "${meal.strMealThumb}" alt = "">
+        </div>
         <div class = "recipe-instruct">
             <h3>Instructions:</h3>
             <p>${meal.strInstructions}</p>
         </div>
-        <div class = "recipe-meal-img">
-            <img src = "${meal.strMealThumb}" alt = "">
-        </div>
+        
         <div class = "recipe-link">
             <a href = "${meal.strYoutube}" target = "_blank">Watch Video</a>
         </div>

@@ -43,7 +43,7 @@
   color: var(--tenne-tawny);
 }
 .search-btn {
-  width: 5rem;
+  width: 8rem;
   height: 3rem;
   font-size: 1.5rem;
   background: var(--tenne-tawny);
@@ -108,11 +108,11 @@
 }
 
 .recipe-close-btn {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   position: absolute;
-  right: 2rem;
+  left: 2rem;
   top: 2rem;
   font-size: 1.8rem;
-  background: #fff;
   border: none;
   width: 35px;
   height: 35px;
@@ -133,16 +133,8 @@
   color: var(--tenne-tawny);
   display: inline-block;
   padding: 0.2rem 0.5rem;
-  border-radius: 0.3rem;
 }
-.recipe-category {
-  background: #fff;
-  font-weight: 600;
-  color: var(--tenne-tawny);
-  display: inline-block;
-  padding: 0.2rem 0.5rem;
-  border-radius: 0.3rem;
-}
+
 .recipe-instruct {
   padding: 1rem 0;
 }
@@ -178,7 +170,7 @@
 /* Media Queries */
 @media (min-width: 600px) {
   .meal-search-box {
-    width: 95%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -191,7 +183,7 @@
 @media (min-width: 768px) {
   #meal {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
   .meal-item {
