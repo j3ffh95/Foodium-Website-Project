@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="food-favicon.ico" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <!-- Open Sans Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/utilities.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style-search.css" />
+    <title>Foodium-Search</title>
+  </head>
+  <body id="home">
+    <header class="hero small-hero">
+      <div id="navbar" class="navbar top">
+        <a href="index.html">
+            <h1 class="logo">
+              <span class="text-primary"
+                ><i class="fas fa-hamburger"></i>Food</span
+              >ium
+            </h1>
+          </a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./search.html">Search</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <h1>Contact Me</h1>
+      </div>
+    </header>
+
+     <!-- Contact Section -->
+     <section id="contact" class="contact flex-columns flex-reverse">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img
+                src="./images/home/contact.jpg"
+                alt="wacthing soccer photo"
+              />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-light">
+              <h2>Contact</h2>
+              <form action="" class="contact-form">
+                <div class="form-control">
+                  <label for="name">Name: </label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Enter name"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="email">Email: </label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter email"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="email">Phone: </label>
+                  <input
+                    type="tel"
+                    name="telphone"
+                    placeholder="888 888 8888"
+                    pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+                    maxlength="12"
+                    title="Ten digits code"
+                    required
+                  />
+                  <label> Eg : 081 222 2224 </label>
+                </div>
+                <input type="submit" value="Send" class="btn" id="submit" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>Copyright &copy; 2021 - Foodium</p>
+    </footer>
+
+   
+  </body>
+</html>
