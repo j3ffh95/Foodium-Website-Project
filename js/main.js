@@ -4,10 +4,10 @@ const searchButton = document.getElementById("search-btn"),
   mealDetailsBody = document.querySelector(".meal-details-body"),
   recipeCloseBtn = document.getElementById("recipe-close-btn");
 
-// event listeners
+
 searchInput.addEventListener("submit", getMealList);
 searchButton.addEventListener("click", getMealList);
-mealListGridContainer.addEventListener("click", getMealRecipe);
+mealListGridContainer.addEventListener("click", getRecipeForMeal);
 recipeCloseBtn.addEventListener("click", () => {
   mealDetailsBody.parentElement.classList.remove("showRecipe");
 });
@@ -48,8 +48,8 @@ function getMealList(e) {
     });
 }
 
-// get recipe of the meal
-function getMealRecipe(e) {
+// This function will get the meal from api
+function getRecipeForMeal(e) {
   e.preventDefault();
   if (e.target.classList.contains("recipe-btn")) {
     let mealItem = e.target.parentElement.parentElement;
@@ -57,12 +57,12 @@ function getMealRecipe(e) {
       `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.dataset.id}`
     )
       .then(response => response.json())
-      .then(data => mealRecipeModal(data.meals));
+      .then(data => showMealModal(data.meals));
   }
 }
 
-// create a modal
-function mealRecipeModal(meal) {
+// This function will make the modal window and insert information from the api.
+function showMealModal(meal) {
   meal = meal[0];
   console.log(meal)
   let html = `
