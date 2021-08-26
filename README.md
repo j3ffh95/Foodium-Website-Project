@@ -1,4 +1,3 @@
-# soccer-website-design
-A Soccer website design made with HTML, CSS and a bit of JavaScript with JQuery.
+# Foodium! Find meals
 
-Click here for demo ==> https://j3ffh95.github.io/soccer-website-design/
+With Foodium you can search for lots of meals by just entering an ingredient.
