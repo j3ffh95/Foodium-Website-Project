@@ -36,14 +36,14 @@ function getMealList(e) {
                     </div>
                 `;
         });
-        mealList.classList.remove("notFound");
+        mealListButton.classList.remove("notFound");
       } else {
         html =
           "Unfortunely no meal was found, Try searching for another ingredient.";
-        mealList.classList.add("notFound");
+        mealListButton.classList.add("notFound");
       }
 
-      mealList.innerHTML = html;
+      mealListButton.innerHTML = html;
     });
 }
 
