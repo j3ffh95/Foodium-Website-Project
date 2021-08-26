@@ -1,12 +1,12 @@
-const searchBtn = document.getElementById("search-btn");
-const searchInput = document.getElementById("search-form");
-const mealList = document.getElementById("meal");
-const mealDetailsContent = document.querySelector(".meal-details-content");
-const recipeCloseBtn = document.getElementById("recipe-close-btn");
+const searchButton = document.getElementById("search-btn"),
+  searchInput = document.getElementById("search-form"),
+  mealList = document.getElementById("meal"),
+  mealDetailsContent = document.querySelector(".meal-details-content"),
+  recipeCloseBtn = document.getElementById("recipe-close-btn");
 
 // event listeners
 searchInput.addEventListener("submit", getMealList);
-searchBtn.addEventListener("click", getMealList);
+searchButton.addEventListener("click", getMealList);
 mealList.addEventListener("click", getMealRecipe);
 recipeCloseBtn.addEventListener("click", () => {
   mealDetailsContent.parentElement.classList.remove("showRecipe");
