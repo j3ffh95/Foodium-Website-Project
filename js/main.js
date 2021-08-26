@@ -1,18 +1,18 @@
 const searchButton = document.getElementById("search-btn"),
   searchInput = document.getElementById("search-form"),
-  mealListButton = document.getElementById("meal"),
-  mealDetailsContent = document.querySelector(".meal-details-content"),
+  mealListGridContainer = document.getElementById("meal"),
+  mealDetailsBody = document.querySelector(".meal-details-body"),
   recipeCloseBtn = document.getElementById("recipe-close-btn");
 
 // event listeners
 searchInput.addEventListener("submit", getMealList);
 searchButton.addEventListener("click", getMealList);
-mealListButton.addEventListener("click", getMealRecipe);
+mealListGridContainer.addEventListener("click", getMealRecipe);
 recipeCloseBtn.addEventListener("click", () => {
-  mealDetailsContent.parentElement.classList.remove("showRecipe");
+  mealDetailsBody.parentElement.classList.remove("showRecipe");
 });
 
-// get meal list that matches with the ingredients
+// This function will get all meals that matches with the ingredient that the user input
 function getMealList(e) {
   e.preventDefault();
   let searchInputTxt = document.getElementById("search-input").value.trim();
@@ -21,29 +21,30 @@ function getMealList(e) {
   )
     .then(response => response.json())
     .then(data => {
+      console.log(data.meals)
       let html = "";
       if (data.meals) {
         data.meals.forEach(meal => {
           html += `
                     <div class = "meal-item" data-id = "${meal.idMeal}">
-                        <div class = "meal-img">
+                        <div class = "meal-image">
                             <img src = "${meal.strMealThumb}" alt = "food">
                         </div>
                         <div class = "meal-name">
                             <h3>${meal.strMeal}</h3>
-                            <a href = "#" class = "recipe-btn">Get Recipe</a>
+                            <a href = "#" class = "recipe-btn">How to</a>
                         </div>
                     </div>
                 `;
         });
-        mealListButton.classList.remove("notFound");
+        mealListGridContainer.classList.remove("notFound");
       } else {
         html =
           "Unfortunely no meal was found, Try searching for another ingredient.";
-        mealListButton.classList.add("notFound");
+        mealListGridContainer.classList.add("notFound");
       }
 
-      mealListButton.innerHTML = html;
+      mealListGridContainer.innerHTML = html;
     });
 }
 
@@ -63,21 +64,26 @@ function getMealRecipe(e) {
 // create a modal
 function mealRecipeModal(meal) {
   meal = meal[0];
+  console.log(meal)
   let html = `
         <h2 class = "recipe-title">Hot to make <i>${meal.strMeal}</i></h2>
         <p class = "recipe-category">Category: ${meal.strCategory}</p>
-        <div class = "recipe-meal-img">
+        <p class = "recipe-category">Area: ${meal.strArea}</p>
+        <p class = "recipe-category">Tags: ${meal.strTags}</p>
+        <p class = "recipe-category"><a href="${meal.strSource}" target="_blank">Read More</a></p>
+        <div class = "recipe-meal-image">
             <img src = "${meal.strMealThumb}" alt = "">
         </div>
+        <div class = "recipe-link">
+        <a href = "${meal.strYoutube}" target = "_blank"><i class="fab fa-youtube"></i> See Video in YouTube <i class="fab fa-youtube"></i></a>
+    </div>
         <div class = "recipe-instruct">
             <h3>Instructions:</h3>
             <p>${meal.strInstructions}</p>
         </div>
         
-        <div class = "recipe-link">
-            <a href = "${meal.strYoutube}" target = "_blank">Watch Video</a>
-        </div>
+       
     `;
-  mealDetailsContent.innerHTML = html;
-  mealDetailsContent.parentElement.classList.add("showRecipe");
+  mealDetailsBody.innerHTML = html;
+  mealDetailsBody.parentElement.classList.add("showRecipe");
 }
