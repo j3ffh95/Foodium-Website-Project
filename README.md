@@ -1,6 +1,6 @@
 # Foodium! Find meals
 
-##About this website
+#About this website
 
 In this website user can search for lots of meals by just entering an ingredient.
 
