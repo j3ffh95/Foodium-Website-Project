@@ -4,7 +4,7 @@ In this website user can search for lots of meals by just entering an ingredient
 
 **Link to project:** https://j3ffh95.github.io/Foodium-Website-Project/
 
-![Alt Text](https://user-images.githubusercontent.com/26830834/141785182-bb07a27a-faf5-4ae1-a31d-ead50feaa8bd.mp4)
+![Alt Text](https://github.com/j3ffh95/Foodium-Website-Project/blob/main/foodiumPart1.gif)
   <img width="48%" src="https://giphy.com/gifs/xh1vaAb3XZWZCP7T3d.gif" alt="Eddie teaching code on YouTube" />
 
 
