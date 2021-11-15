@@ -4,12 +4,10 @@ In this website user can search for lots of meals by just entering an ingredient
 
 **Link to project:** https://j3ffh95.github.io/Foodium-Website-Project/
 
-<img width="45%" src="https://github.com/j3ffh95/Foodium-Website-Project/blob/main/foodiumPart1.gif" alt="Foodium Gif Part one" />
-<!-- <img width="45%" src="https://github.com/j3ffh95/Foodium-Website-Project/blob/main/foodiumPart2.gif" alt="Foodium Gif Part two" /> -->
-![Alt text](https://github.com/j3ffh95/Foodium-Website-Project/blob/main/foodiumPart2.gif)
-
-
-
+<p align="center">
+  <img width="45%" src="https://github.com/j3ffh95/Foodium-Website-Project/blob/main/foodiumPart1.gif" alt="Foodium Gif Part one" />
+  <img width="45%" src="https://github.com/j3ffh95/Foodium-Website-Project/blob/main/foodiumPart2.gif" alt="Foodium Gif Part two" />
+</p>
 
 ## How It's Made:
 
