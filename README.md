@@ -1,16 +1,10 @@
-
-
-I use a tool to create a modal gallery --> https://lokeshdhakar.com/projects/lightbox2/
-
-I use the api to find meals--> https://www.themealdb.com/api.php
-
 # Foodium! Find meals in one click
 In this website user can search for lots of meals by just entering an ingredient.
 
 
 **Link to project:** https://j3ffh95.github.io/Foodium-Website-Project/
 
-![alt tag](http://placecorgi.com/1200/650)
+![alt tag](https://user-images.githubusercontent.com/26830834/141778726-27c84788-d388-4b83-b5c4-62657ed7bd40.png)
 
 ## How It's Made:
 
