@@ -4,8 +4,8 @@ In this website user can search for lots of meals by just entering an ingredient
 
 **Link to project:** https://j3ffh95.github.io/Foodium-Website-Project/
 
-![Alt Text](https://giphy.com/gifs/RN9O5YpmqY1S1Vk7jc.gif)
-<iframe src="https://giphy.com/embed/RN9O5YpmqY1S1Vk7jc" width="480" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/RN9O5YpmqY1S1Vk7jc">via GIPHY</a></p>
+![Alt Text](https://giphy.com/embed/RN9O5YpmqY1S1Vk7jc.gif)
+
 ## How It's Made:
 
 **Tech used:** HTML5, CSS3, JavaScript ESNext, font awesome, lightbox2, theMealDB
