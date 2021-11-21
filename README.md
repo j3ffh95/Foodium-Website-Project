@@ -11,7 +11,7 @@ In this website user can search for lots of meals by just entering an ingredient
 
 ## How It's Made:
 
-**Tech used:** HTML5, CSS3, JavaScript ESNext, font awesome, lightbox2, theMealDB
+**Tech used:** HTML5, CSS3, JavaScript ESNext, font awesome, lightbox2, theMealDB, VsCode and a bit of bootstrap
 
 This project was created to show my understanding of using APIS. I got to use an APi by getting information from it and display it aswell.
 
