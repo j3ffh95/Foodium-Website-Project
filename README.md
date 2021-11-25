@@ -26,7 +26,7 @@ This project was created to show my understanding of using APIS. I got to use an
 ## Lessons Learned:
 
 Learned more about the npm packages like lightbox2, this package is awesome its easy to use and also helps you make a gallery modal so easy to build. 
-Can't wait to use other packages and discover more great stuff like this
+Can't wait to use other packages and discover more great stuff like this.
 
 
 
