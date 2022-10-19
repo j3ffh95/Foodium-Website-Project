@@ -157,6 +157,9 @@ ul a:hover {
   justify-content: center;
   text-align: center;
   height: 200px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer a {
